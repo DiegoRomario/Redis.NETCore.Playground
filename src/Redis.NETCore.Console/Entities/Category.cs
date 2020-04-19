@@ -14,5 +14,11 @@ namespace Redis.NETCore.Entities
 
         public Guid Id { get; private set; }
         public string Description { get; private set; }
+
+        public override string ToString()
+        {
+            return $"Id: {this.Id.ToString()}\nDescription: {this.Description} ";
+        }
+
     }
 }

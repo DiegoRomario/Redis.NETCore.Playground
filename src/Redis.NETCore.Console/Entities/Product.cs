@@ -19,5 +19,10 @@ namespace Redis.NETCore.Entities
         public double Price { get; private set; }
         public Category Category { get; private set; }
 
+        public override string ToString()
+        {
+            return $"Id: {this.Id}\nName: {this.Name}\nPrice: {this.Price:c} ";
+        }
+
     }
 }
